@@ -1,22 +1,23 @@
 #!/usr/bin/python
-# v1.0
+# by lunaferie
+# v1.1
 
 import smtplib
 
 # CONFIGURE:
 
-fromaddr = 'test@ayum.eu'
-toaddr = 'wojt.ozog@gmail.com'
-subject = 'test msg'
+fromaddr = 'user@yourdomain.com'
+toaddr = 'user2@example.com'
+subject = 'your msg subject'
 
-text = 'This is a txt mesg from shire'
+text = 'This is a txt msg from Shire'
 
 server = 'localhost'
 
 
 #############################################
 
-def sendmail(fromaddr, toaddr, subject, text, server):
+def pmail(fromaddr, toaddr, subject, text, server):
     msg = "\r\n".join([
         "From: %s" % fromaddr,
 	"To: %s" % toaddr,
@@ -34,4 +35,4 @@ def sendmail(fromaddr, toaddr, subject, text, server):
     except smtplib.SMTPException:
 	print "ERROR: unable to sent email"
 
-sendmail(fromaddr, toaddr, subject, text, server)
+pmail(fromaddr, toaddr, subject, text, server)
