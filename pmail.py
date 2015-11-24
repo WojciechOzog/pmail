@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# by wozog
+# by lunaferie
 # v2.2
 
 import getopt
