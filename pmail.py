@@ -6,11 +6,11 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # configure
-sender = 'test@test.pl'
-subject = 'testowy'
-recipient = 'wojt.ozog@gmail.com'
-server = '10.10.10.25'
-message = 'no i juz'
+sender = 'me@me.com'
+subject = 'I want You'
+recipient = 'you@you.com'
+server = '127.0.0.1'
+message = 'now'
 
 
 def send_mail(sender, subject, recipient, server, message):
